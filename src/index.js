@@ -55,11 +55,13 @@ function setSplitBtn() {
 function setStartBtn() {
   btnLeft.className = 'btn start';
   btnLeft.textContent = 'START';
+  start();
 }
 
 function setResetBtn() {
   btnRight.className = 'btn reset';
   btnRight.textContent = 'RESET';
+  reset();
 }
 
 // Start/Stop Button
@@ -83,5 +85,6 @@ btnRight.addEventListener('click', () => {
     printTime();
   } else {
     printSplit();
+    
   }
 });
